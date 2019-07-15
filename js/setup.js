@@ -60,9 +60,8 @@ var userName = setup.querySelector('.setup-user-name');
 
 var onDocumentKeydown = function (evt) {
   if (evt.keyCode === ESC_KEYCODE && !(document.activeElement === userName)) {
-    setup.classList.add('hidden');
+    closeSetup();
   }
-  document.addEventListener('keydown', onDocumentKeydown);
 };
 
 var openSetup = function () {
