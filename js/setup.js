@@ -59,7 +59,7 @@ var wizardSetup = document.querySelector('.setup-open');
 var userName = setup.querySelector('.setup-user-name');
 
 var onDocumentKeydown = function (evt) {
-  if (evt.keyCode === ESC_KEYCODE && !(document.activeElement === userName)) {
+  if (evt.keyCode === ESC_KEYCODE && document.activeElement !== userName) {
     closeSetup();
   }
 };
