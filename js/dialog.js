@@ -14,7 +14,6 @@
       window.util.isEscEvent(evt, closeSetup);
     }
   };
-
   var openSetup = function () {
     setup.classList.remove('hidden');
 
